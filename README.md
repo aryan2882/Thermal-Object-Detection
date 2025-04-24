@@ -53,17 +53,29 @@
    ```bash
    python train_detector.py
 
-9.**The result with annotations will be in output folder.**
+9. **The result with annotations will be in output folder.**
+   ```bash
+   python detect.py --data data/custom.data --cfg cfg/yolov3-spp-r.cfg --weights weights/best.pt
+
+## 🧪 **Results**
+
+We compared our model against ThermalDet on the FLIR test set across key object classes:
+
+### 📊 Performance Comparison (mAP @ IoU=0.5)
+
+| Model                                     | Person mAP   | Bike mAP   | Car mAP   | Overall mAP   |
+|-------------------------------------------|--------------|------------|-----------|---------------|
+| ThermalDet                                | 78.2%        | 60.0%      | 85.5%     | 74.6%         |
+| **Ours (EfficientDet-D3 + Enhancements)** | **81.2%**    | **64.0%**  | **86.5%** | **77.3%**     |
+
+### 🚀 Highlights
+- 🔍 **Tiny Object AP** increased from **64.6% ➜ 77.3%**
+- 🧠 Enhanced performance through:
+  - Super-resolution preprocessing
+  - Adaptive anchor box tuning
 
 
-🧪 Results
 
-Model	Person mAP	Bike mAP	Car mAP	Overall mAP
-ThermalDet	78.2	60.0	85.5	74.6
-Ours (EfficientDet-D3 + Enhancements)	81.2	64.0	86.5	77.3
-Tiny Object AP improved from 64.6% to 77.3%
-
-Achieves real-time inference on NVIDIA RTX 3090 (≈100ms/frame)
 
 🔁 Sample Input and Output
 🔹 Input
