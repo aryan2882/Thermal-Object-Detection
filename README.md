@@ -44,18 +44,17 @@
    python normalize.py
 
 6. **Downloads pretrained weights and put it in weights folder**
-   **[Download link]()**
+   **[Download link](https://drive.google.com/drive/folders/1_KQM_ZiAGLuCRBtYWQUJVgA9wQ2gOPo_?usp=sharing)**
 
 7. **Put some pictures from validation folder to data/sample folder**
    
 8. **Train the EfficientDet-based Detector**
 
-   ```bash
-   python train_detector.py
-
-9. **The result with annotations will be in output folder.**
+  
    ```bash
    python detect.py --data data/custom.data --cfg cfg/yolov3-spp-r.cfg --weights weights/best.pt
+
+9. **The result with annotations will be in output folder.**
 
 ## 🧪 **Results**
 
