@@ -79,10 +79,10 @@ We compared our model against ThermalDet on the FLIR test set across key object 
 ## 🔁 Sample Input and Output
 
 ### 🔹 Input
-<img src="samples/input.jpg" alt="Input Thermal Image" width="400"/>
+<img src="input.png" alt="Input Thermal Image" width="400"/>
 
 ### 🔸 Output
-<img src="samples/output.jpg" alt="Detected Output" width="400"/>
+<img src="output.png" alt="Detected Output" width="400"/>
 
 Bounding boxes are drawn for pedestrians, vehicles, and other classes with confidence scores.  
 Our enhanced pipeline detects tiny and partially occluded objects effectively, even in low-visibility conditions.
@@ -94,8 +94,8 @@ Our enhanced pipeline detects tiny and partially occluded objects effectively, e
 If you use this work in your research or projects, please consider citing:
 
 ```bibtex
-@inproceedings{raj2025thermaldet,
-  title={Tiny Object-Aware Multi-Stage Blockwise Framework for Thermal Object Detection Using EfficientDet},
+@inproceedings{
+title={Tiny Object-Aware Multi-Stage Blockwise Framework for Thermal Object Detection Using EfficientDet},
   author={Aryan Raj and Tridib Chatterjee and Parth Khairnar},
   year={2025}
 }
