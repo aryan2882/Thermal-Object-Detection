@@ -45,10 +45,16 @@
 
 6. **Downloads pretrained weights and put it in weights folder**
    **[Download link]()**
-7. **Train the EfficientDet-based Detector**
+
+7. **Put some pictures from validation folder to data/sample folder**
+   
+8. **Train the EfficientDet-based Detector**
 
    ```bash
    python train_detector.py
+
+9.**The result with annotations will be in output folder.**
+
 
 🧪 Results
 
