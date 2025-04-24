@@ -16,7 +16,7 @@
 ---
 
 ## 📂 Dataset Download
-➡️ **[Download the FLIR ADAS Thermal Dataset here](PASTE-YOUR-LINK-HERE)**  
+➡️ **[Download the FLIR ADAS Thermal Dataset here](https://adas-dataset-v2.flirconservator.com/#downloadguide)**  
 (contains 10,742 training and 1,145 testing thermal images, annotated for 15 object classes)
 
 
@@ -27,23 +27,25 @@
 1. **Clone the Repository**  
    ```bash
    git clone https://github.com/aryan2882/Thermal-Object-Detection.git
-   cd Thermal-Object-Detection
 
 2. **Navigate into the Project Directory**  
    ```bash
-   cd YOUR_REPO
+   cd Thermal-Object-Detection
 3. **Install Dependencies**
 
    ```bash
    pip install -r requirements.txt
 4. **Download & Place Dataset**
-   Place the FLIR dataset inside the data/ folder (create it if it doesn’t exist).
+   Place the FLIR dataset inside the coco/ folder (create it if it doesn’t exist).
 
 5. **Run Preprocessing & Filtering Stage**
 
    ```bash
-   python stage1_filtering.py
-6. **Train the EfficientDet-based Detector**
+   python normalize.py
+
+6. **Downloads pretrained weights and put it in weights folder**
+   **[Download link]()**
+7. **Train the EfficientDet-based Detector**
 
    ```bash
    python train_detector.py
